@@ -21,7 +21,7 @@ layout: default
             {% if image.path contains 'fulls' %}
                 <article class="thumb">
                     <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
                     <!--<h2></h2>
                     <p></p>-->
                 </article>
@@ -39,12 +39,8 @@ layout: default
                     <p>{{ site.publicise }}</p>
                 </section>
                 <section>
-                    <h2>Follow me on ...</h2>
-                    <ul class="icons">
-                        <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
+                    <h2>Follow me on <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
                                 class="label">Instagram</span></a>
-                        </li>
-                    </ul>
                 </section>
                 <p class="copyright">
                     &copy; {{ site.author }}.
@@ -53,21 +49,6 @@ layout: default
             <div>
                 <section>
                     <h2>Get in touch</h2>
-                    <form method="post" action="#">
-                        <div class="field half first">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
-                        </div>
-                        <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="special"/></li>
-                            <li><input type="reset" value="Reset"/></li>
-                        </ul>
-                    </form>
                 </section>
             </div>
         </div>

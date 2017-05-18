@@ -7,7 +7,7 @@ layout: default
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="index.html"><strong>Photography</strong> by Ram Patra</a></h1>
+        <h1><a href="index.html"><strong>Photography</strong> by Haydon Glover</a></h1>
         <nav>
             <ul>
                 <li><a href="#footer" class="icon fa-info-circle">About</a></li>
@@ -21,7 +21,7 @@ layout: default
             {% if image.path contains 'fulls' %}
                 <article class="thumb">
                     <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
+                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
                     <!--<h2></h2>
                     <p></p>-->
                 </article>
@@ -34,35 +34,20 @@ layout: default
         <div class="inner split">
             <div>
                 <section>
-                    <h2>Hey there, my name is Ram</h2>
+                    <h2>Hey there, my name is Haydon</h2>
                     <p>{{ site.bio }}</p>
                     <p>{{ site.publicise }}</p>
                 </section>
                 <section>
                     <h2>Follow me on ...</h2>
                     <ul class="icons">
-                        <li><a href="{{ site.social_urls.facebook }}" class="icon fa-facebook"><span
-                                class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.twitter }}" class="icon fa-twitter"><span
-                                class="label">Twitter</span></a>
-                        </li>
                         <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
                                 class="label">Instagram</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble"><span
-                                class="label">Dribbble</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.github }}" class="icon fa-github"><span
-                                class="label">GitHub</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin"><span
-                                class="label">LinkedIn</span></a>
                         </li>
                     </ul>
                 </section>
                 <p class="copyright">
-                    &copy; {{ site.author }}. Design: {{ site.web_design }}
+                    &copy; {{ site.author }}.
                 </p>
             </div>
             <div>
